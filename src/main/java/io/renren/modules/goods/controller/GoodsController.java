@@ -1,6 +1,5 @@
 package io.renren.modules.goods.controller;
 
-import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.Arrays;
 import java.util.Date;
@@ -66,7 +65,7 @@ public class GoodsController extends AbstractController {
     public R info(@PathVariable("id") Integer id){
 
         if(id==0){
-
+            //新增
             List<ItemizeEntity> itemizeList = itemizeService.list();
             return R.ok().put("itemizeList",itemizeList);
 
